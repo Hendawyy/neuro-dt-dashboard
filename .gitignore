@@ -1,0 +1,23 @@
+# Secrets and local config — never commit these
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Model artifacts and caches — loaded at runtime, not part of the repo
+checkpoints/
+tensor_cache/
+*.pth
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
